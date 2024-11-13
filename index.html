@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Movie Site</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nord&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+
+            <h1>FILM FLIX</h1>
+
+        </div>
+      
+<!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for movies...">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>   
+    </header>
+   <!-- Movie Previews Section -->
+
+<section id="movie-previews">
+
+    <div class="movie-preview-container" id="movie-preview-container"></div>
+
+</section>
+  
+  
+  
+    <main>
+
+      
+      <!-- Recent Movies Section -->
+
+        <section id="recent-movies" class="movie-section">
+
+            <div class="section-header"><h2>Recent Movies</h2></div>
+
+            <div class="movie-cards-container" id="recent-movies-container"></div>
+
+        </section>
+
+        <!-- Popular Movies Section -->
+
+        <section id="popular-movies" class="movie-section">
+
+            <div class="section-header"><h2>Popular Movies</h2></div>
+
+            <div class="movie-cards-container" id="popular-movies-container"></div>
+
+        </section>
+
+        <!-- All Movies Section -->
+
+        <section id="all-movies" class="movie-section">
+
+           <div class="section-header"> <h2>All Movies</h2></div>
+
+            <div class="movie-cards-container" id="all-movies-container"></div>
+
+            <div class="pagination">
+
+                <button id="prev-btn">Previous</button>
+
+                <button id="next-btn">Next</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>&copy; 2024 MovieExplorer. All rights reserved.</p>
+
+        </div>
+      <!-- Movie Details Modal -->
+
+<div id="movieModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close-btn">&times;</span>
+
+    <img id="modalImage" src="" alt="Movie Image">
+
+    <h3 id="modalTitle"></h3>
+
+    <p id="modalDescription"></p>
+
+    <p><strong>Release Date:</strong> <span id="modalDate"></span></p>
+
+    <p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+
+    <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+
+    <button id="downloadButton">Download</button>
+
+  </div>
+
+</div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
